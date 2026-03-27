@@ -1,0 +1,16 @@
+/* Reset essencial */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Define a fonte padrão do site */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
