@@ -9,6 +9,7 @@ import mongoose from "mongoose";
 
 import photoRoute from "./routes/photo.route.js";
 import authRoute from "./routes/auth.route.js";
+import messageRoute from "./routes/message.route.js";
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.use(express.json());
 
 app.use("/api/photos", photoRoute);
 app.use("/api/auth", authRoute);
+app.use("/api", messageRoute);
 
 const PORT = 3000;
 

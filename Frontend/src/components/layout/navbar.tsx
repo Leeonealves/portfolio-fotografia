@@ -1,29 +1,37 @@
 import { NavLink } from "react-router-dom";
+import LanguageSwitcher from "../LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const NavItens = [
-  { label: "Home", href: "/" },
-  { label: "Galeria", href: "/gallery", border: "rounded-full" },
-  { label: "Sobre", href: "/about" },
-  { label: "Contacto", href: "/contact", border: "rounded-full" }
+  { label: "homepage.navbar.home", href: "/" },
+  { label: "homepage.navbar.gallery", href: "/gallery", border: "rounded-full" },
+  { label: "homepage.navbar.about", href: "/about" },
+  { label: "homepage.navbar.contact", href: "/contact", border: "rounded-full" },
 ];
 
 function Navbar() {
-  return (
-    <nav>
-      <ul className="bg-[transparent] border-b border-[#8D2B00] w-full flex space-x-4 text-white p-4 justify-center">
+  const { t } = useTranslation();
 
+  return (
+
+    <nav>
+      <div className="absolute left-4 top-4">
+        <LanguageSwitcher />
+      </div>
+      <ul className="bg-[transparent] border-b border-[#8D2B00] w-full flex space-x-4 text-white p-4 justify-center">
         {NavItens.map((item) => (
           <li key={item.href}>
             <NavLink
               to={item.href}
               className={({ isActive }) =>
                 `${item.border ?? ""} p-2 rounded transition-all duration-300 hover:bg-white/10
-                ${isActive ? "text-[#8D2B00]" : "text-white"}`}>
-                {item.label}
+                ${isActive ? "text-[#8D2B00]" : "text-white"}`
+              }
+            >
+              {t(item.label)}
             </NavLink>
           </li>
         ))}
-
       </ul>
     </nav>
   );

@@ -1,11 +1,13 @@
 import bg from '../assets/EstacaoMazaneda.jpg';
 import Navbar from '../components/layout/navbar';
+import { useTranslation } from "react-i18next";
 
 function gotoGallery() {
   window.location.href = '/gallery';
 }
 
 function Home() {
+  const { t } = useTranslation();
     
   return ( <>
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -14,7 +16,7 @@ function Home() {
       <div className="w-full h-64">
         <div>
         <button className="bg-[#8D2B00]/70 text-white p-2 rounded-lg hover:bg-[#8D2B00] transition-colors duration-300 mx-auto block" onClick={gotoGallery}>
-          Explorar
+          {t("homepage.home.button")}
         </button>
         </div>
       </div>

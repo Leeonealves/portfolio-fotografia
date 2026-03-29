@@ -1,14 +1,19 @@
 import Navbar from "../components/layout/navbar";
 import Foto from "../assets/foto.jpg";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#859B48] to-[#1D361F]">
       <Navbar />
 
       {/* Container principal com padding e cor de texto */}
       <div className="max-w-6xl mx-auto items-center justify-center p-8 text-white">
-        <h2 className="font-semibold text-2xl pb-12 text-center">Sobre</h2>
+        <h2 className="font-semibold text-2xl pb-12 text-center">
+          {t("homepage.about.title")}
+        </h2>
 
         {/* flex-col: Empilha em mobile
             md:flex-row: Lado a lado em telas médias/grandes
@@ -28,22 +33,11 @@ function About() {
           {/* Lado Direito: Texto */}
           <div className="text-center md:text-left space-y-4">
             <p className="text-lg leading-relaxed">
-              Camilla Teixeira Santos é uma artista brasileira residente em
-              Portugal, estudante de Artes e Impressão Digital. Seu trabalho é
-              influenciado pela fotografia, pelas viagens e pelo diálogo entre
-              história e cultura. Sua produção busca unir sensibilidade estética
-              e narrativa visual, explorando a imagem como forma de expressão e
-              identidade.
+              {t("homepage.about.text1")}
             </p>
 
             <p className="text-lg leading-relaxed opacity-90">
-              Obrigado por estar aqui. Este espaço é um convite para enxergar a
-              vida através da minha lente — onde paisagens ganham voz, detalhes
-              esquecidos se tornam protagonistas e cada sorriso revela uma
-              história. Entre traços, luzes e momentos que quase passam
-              despercebidos, compartilho meus trabalhos favoritos e a forma como
-              transformo o cotidiano em arte. Sinta-se à vontade para explorar,
-              descobrir e se inspirar.
+              {t("homepage.about.text2")}
             </p>
           </div>
         </div>

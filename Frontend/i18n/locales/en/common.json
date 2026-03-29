@@ -1,0 +1,33 @@
+{
+"common": {
+"welcome": "Welcome to our application!"
+},
+
+"homepage": {
+    "home": {
+        "button": "Explore"
+    },
+
+    "navbar": {
+        "home": "Home",
+        "gallery": "Gallery",
+        "about": "About",
+        "contact": "Contact"
+    },
+
+    "about": {
+        "title": "About",
+        "text1": "Camilla Teixeira Santos is a Brazilian artist living in Portugal and a student of Arts and Digital Printing. Her work is influenced by photography, travel, and the dialogue between history and culture. Her production seeks to combine aesthetic sensitivity and visual storytelling, exploring the image as a form of expression and identity.",
+        "text2": "Thank you for being here. This space is an invitation to see life through my lens — where landscapes gain a voice, forgotten details become protagonists, and every smile reveals a story. Among lines, lights, and moments that almost go unnoticed, I share my favorite works and the way I transform everyday life into art. Feel free to explore, discover, and get inspired."
+    },
+
+    "contact": {
+        "title": "Get in Touch",
+        "nome": "Name",
+        "email": "Email",
+        "message": "Message",
+        "button": "Send Message"
+    }
+}
+
+}
