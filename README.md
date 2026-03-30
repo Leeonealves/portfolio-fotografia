@@ -42,6 +42,8 @@ React Router Dom (SPA navigation)
 
 Fetch (API consumption)
 
+i18next, i18next-browser-languagedetector
+
 ### Backend
 Node.js
 
