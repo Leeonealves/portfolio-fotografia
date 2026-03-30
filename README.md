@@ -3,16 +3,29 @@ This project was developed for a rising professional photographer with the goal 
 
 The portfolio features a minimalist and intuitive layout, focusing on the visual experience and highlighting the quality of the images.
 
+## Printscreens
+
+<img width="1919" height="826" alt="home" src="https://github.com/user-attachments/assets/b568cbf4-1c2d-4fa2-b919-c09bc72a208f" />
+
+
 ## Pages
 The website consists of 4 main pages:
 
-Home – Initial presentation and visual highlights
+- **Home** – Initial presentation and visual highlights
 
-About – Information about the photographer
+- **About** – Information about the photographer
 
-Gallery – Display of photographic works
+- **Gallery** – Display of photographic works
 
-Contact – Contact form
+- **Contact** – Contact form
+
+## Backoffice - CMS Pages
+
+- **Dashboard** – Welcome page with an introduction to the CMS  
+- **Upload** – Section for uploading images  
+- **Edit** – Section for managing and deleting gallery photos  
+- **Messages** – View and manage contacts submitted through the form  
+
 
 ## Layout
 A simple and modern design that prioritizes:
