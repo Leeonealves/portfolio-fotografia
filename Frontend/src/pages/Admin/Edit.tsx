@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 
 interface Photo {
   _id: string;
-  url: string;
+  imageUrl: string;
+  title?: string; 
 }
 
 const Edit = () => {
@@ -13,6 +14,7 @@ const Edit = () => {
     try {
       const res = await fetch("http://localhost:3000/api/photos");
       const data = await res.json();
+      console.log("Dados recebidos da API:", data);
       setPhotos(data);
     } catch (err) {
       console.error(err);
@@ -55,7 +57,7 @@ const Edit = () => {
             key={photo._id}
             className="bg-white rounded-lg shadow-md overflow-hidden"
           >
-            <img src={photo.url} className="w-full h-48 object-cover" />
+            <img src={photo.imageUrl} className="w-full h-48 object-cover" />
 
             <button
               onClick={() => handleDelete(photo._id)}

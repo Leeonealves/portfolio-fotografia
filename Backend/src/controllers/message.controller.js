@@ -30,7 +30,6 @@ export const createMessage = async (req, res) => {
   }
 };
 
-// 🔥 ESTA FUNÇÃO TEM DE FICAR FORA DO CATCH E FORA DA OUTRA FUNÇÃO
 export const getMessages = async (req, res) => {
   try {
     const messages = await Message.find().sort({ createdAt: -1 });

@@ -36,4 +36,26 @@ router.get("/", async (req, res) => {
   res.json(photos);
 });
 
+// Apagar uma foto por ID
+router.delete("/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // 1. Procurar a foto na base de dados para obter o ID do Cloudinary (opcional, mas recomendado)
+    const photo = await Photo.findById(id);
+
+    if (!photo) {
+      return res.status(404).json({ message: "Foto não encontrada no sistema." });
+    }
+
+    // 2. Remover da base de dados (MongoDB)
+    await Photo.findByIdAndDelete(id);
+
+    res.json({ message: "Foto removida com sucesso!" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Erro ao tentar apagar a foto." });
+  }
+});
+
 export default router;
