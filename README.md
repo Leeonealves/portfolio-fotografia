@@ -5,8 +5,15 @@ The portfolio features a minimalist and intuitive layout, focusing on the visual
 
 ## Printscreens
 
-<img width="1919" height="826" alt="home" src="https://github.com/user-attachments/assets/b568cbf4-1c2d-4fa2-b919-c09bc72a208f" />
-
+<img width="1919" height="827" alt="home" src="https://github.com/user-attachments/assets/501bddb8-4920-4729-a99d-79a59eb9b3e7" />
+<img width="1919" height="826" alt="gallery" src="https://github.com/user-attachments/assets/d42ac04a-abbc-4d39-a7dd-de33b1e4f5eb" />
+<img width="1919" height="821" alt="lightbox" src="https://github.com/user-attachments/assets/dce3d34b-c195-48ff-b4e0-5f8798fd94b6" />
+<img width="1919" height="821" alt="about" src="https://github.com/user-attachments/assets/e61624bf-6fe4-4004-b038-9a5ecb7cd5bc" />
+<img width="1919" height="825" alt="contact" src="https://github.com/user-attachments/assets/6ea75352-9bc7-45ed-8a04-7af981516ff8" />
+<img width="1919" height="828" alt="dashboard" src="https://github.com/user-attachments/assets/e8dc8be0-5cf9-4e47-958b-8e027ffdf861" />
+<img width="1919" height="826" alt="upload" src="https://github.com/user-attachments/assets/66a04d87-79c3-4782-b57d-ec4fffe560de" />
+<img width="1919" height="821" alt="edit" src="https://github.com/user-attachments/assets/25e4e4cd-89c0-403e-a18a-3e0f62c538ea" />
+<img width="1919" height="825" alt="message" src="https://github.com/user-attachments/assets/83ad2495-ceb1-4c81-a598-56990d4879c2" />
 
 ## Pages
 The website consists of 4 main pages:
