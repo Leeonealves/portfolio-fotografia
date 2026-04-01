@@ -1,9 +1,9 @@
-# Photography Portfolio
+# 📸 Photography Portfolio
 This project was developed for a rising professional photographer with the goal of showcasing her work in an elegant, simple, and efficient way.
 
 The portfolio features a minimalist and intuitive layout, focusing on the visual experience and highlighting the quality of the images.
 
-## Printscreens
+## 🖼️ Printscreens
 
 <img width="1919" height="827" alt="home" src="https://github.com/user-attachments/assets/501bddb8-4920-4729-a99d-79a59eb9b3e7" />
 <img width="1919" height="826" alt="gallery" src="https://github.com/user-attachments/assets/d42ac04a-abbc-4d39-a7dd-de33b1e4f5eb" />
@@ -15,7 +15,7 @@ The portfolio features a minimalist and intuitive layout, focusing on the visual
 <img width="1919" height="821" alt="edit" src="https://github.com/user-attachments/assets/25e4e4cd-89c0-403e-a18a-3e0f62c538ea" />
 <img width="1919" height="825" alt="message" src="https://github.com/user-attachments/assets/83ad2495-ceb1-4c81-a598-56990d4879c2" />
 
-## Pages
+## 📄 Pages
 The website consists of 4 main pages:
 
 - **Home** – Initial presentation and visual highlights
@@ -26,7 +26,7 @@ The website consists of 4 main pages:
 
 - **Contact** – Contact form
 
-## Backoffice - CMS Pages
+## 🧑‍💻 Backoffice - CMS Pages
 
 - **Dashboard** – Welcome page with an introduction to the CMS  
 - **Upload** – Section for uploading images  
@@ -34,7 +34,7 @@ The website consists of 4 main pages:
 - **Messages** – View and manage contacts submitted through the form  
 
 
-## Layout
+## 🎨 Layout
 A simple and modern design that prioritizes:
 
 Intuitive navigation
@@ -47,9 +47,9 @@ Excellent User Experience (UX)
 
 *The client chose all the layout, typography, and color palette.
 
-## Technologies Used
+## 🧰 Technologies Used
 
-### Frontend
+### 🖥️ Frontend
 React (v18+)
 
 Vite (quick build tool)
@@ -64,7 +64,7 @@ Fetch (API consumption)
 
 i18next, i18next-browser-languagedetector
 
-### Backend
+### 🗄️ Backend
 Node.js
 
 Express
@@ -73,19 +73,19 @@ MongoDB
 
 Mongoose
 
-### Authentication
+### 🔐 Authentication
 JWT (JSON Web Token)
 
 Bcrypt
 
-### Image Management
+### 🖼️ Image Management
 Cloudinary
 
 Multer
 
 Sharp
 
-### Other Tools
+### 🧩 Other Tools
 CORS
 
 Dotenv
