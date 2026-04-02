@@ -16,7 +16,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "https://portfolio-fotografia.onrender.com/api/messages",
+        `${import.meta.env.VITE_API_URL}/api/messages`,
         {
           method: "POST",
           headers: {

@@ -26,9 +26,17 @@ function Gallery() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    fetch("https://portfolio-fotografia.onrender.com/api/photos")
-      .then((res) => res.json())
-      .then((data) => setImages(data));
+    fetch(`${import.meta.env.VITE_API_URL}/api/photos`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Erro ao buscar fotos");
+        }
+        return res.json();
+      })
+      .then((data) => setImages(data))
+      .catch((err) => {
+        console.error(err);
+      });
   }, []);
 
   return (
