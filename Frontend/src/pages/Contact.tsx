@@ -15,13 +15,16 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/api/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://portfolio-fotografia.onrender.com/api/messages",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
         },
-        body: JSON.stringify(form), 
-      });
+      );
 
       const data = await response.json();
 
