@@ -1,4 +1,4 @@
-import bg from '../assets/EstacaoMazaneda.jpg';
+import bg from '../assets/estacao.jpg';
 import Navbar from '../components/layout/navbar';
 import { useTranslation } from "react-i18next";
 

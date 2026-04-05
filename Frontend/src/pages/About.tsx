@@ -1,5 +1,5 @@
 import Navbar from "../components/layout/navbar";
-import Foto from "../assets/foto.jpg";
+import Foto from "../assets/camilla.jpg";
 import { useTranslation } from "react-i18next";
 
 function About() {
