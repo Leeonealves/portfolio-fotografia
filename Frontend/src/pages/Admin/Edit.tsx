@@ -9,10 +9,10 @@ interface Photo {
 const Edit = () => {
   const [photos, setPhotos] = useState<Photo[]>([]);
 
-  // 🔥 buscar fotos
+  // Buscar fotos
   const fetchPhotos = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/photos");
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/photos`);
       const data = await res.json();
       console.log("Dados recebidos da API:", data);
       setPhotos(data);
@@ -25,14 +25,17 @@ const Edit = () => {
     fetchPhotos();
   }, []);
 
-  // 🔥 apagar foto
+  // Apagar foto
   const handleDelete = async (id: string) => {
     if (!confirm("Tens a certeza que queres apagar esta foto?")) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/photos/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/photos/${id}`,
+        {
+          method: "DELETE",
+        },
+      );
 
       if (!res.ok) {
         alert("Erro ao apagar");
