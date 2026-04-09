@@ -52,7 +52,7 @@ function Gallery() {
               key={img._id}
               src={thumb}
               loading="lazy"
-              className="w-full h-64 object-cover rounded-lg cursor-pointer"
+              className="w-full h-64 md:h-72 lg:h-80 object-cover rounded-lg cursor-pointer"
               onClick={() => {
                 setIndex(i);
                 setOpen(true);

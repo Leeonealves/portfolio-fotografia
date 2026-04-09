@@ -23,26 +23,26 @@ const Upload = () => {
 
     const API_URL = import.meta.env.VITE_API_URL;
 
-  try {
-      const res = await fetch(`${API_URL}/api/photos/upload`, {
-        method: "POST",
-        body: formData,
-      });
-    
-      if (!res.ok) {
-        const errorText = await res.text();
-        console.error(errorText);
-        alert("Failed to upload");
-        return;
+    try {
+        const res = await fetch(`${API_URL}/api/photos/upload`, {
+          method: "POST",
+          body: formData,
+        });
+      
+        if (!res.ok) {
+          const errorText = await res.text();
+          console.error(errorText);
+          alert("Failed to upload");
+          return;
+        }
+      
+        const data = await res.json();
+        console.log(data);
+        alert("Upload successful");
+      } catch (err) {
+        console.error(err);
+        alert("Erro de conexão com o servidor");
       }
-    
-      const data = await res.json();
-      console.log(data);
-      alert("Upload successful");
-    } catch (err) {
-      console.error(err);
-      alert("Erro de conexão com o servidor");
-    }
   };
 
   return (
