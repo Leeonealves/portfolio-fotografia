@@ -21,19 +21,21 @@ const Upload = () => {
     const formData = new FormData();
     formData.append("image", file);
 
-    try {
-      const res = await fetch("http://localhost:3000/api/photos/upload", {
+    const API_URL = import.meta.env.VITE_API_URL;
+
+  try {
+      const res = await fetch(`${API_URL}/api/photos/upload`, {
         method: "POST",
         body: formData,
       });
-
+    
       if (!res.ok) {
         const errorText = await res.text();
         console.error(errorText);
         alert("Failed to upload");
         return;
       }
-
+    
       const data = await res.json();
       console.log(data);
       alert("Upload successful");
