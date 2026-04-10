@@ -45,14 +45,16 @@ function Gallery() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-3">
         {images.map((img, i) => {
-          const thumb = optimize(img.imageUrl, 600, 70);
+          // Aumentamos para 800 para garantir nitidez em telas 2xl
+          const thumb = optimize(img.imageUrl, 800, 75);
 
           return (
             <img
               key={img._id}
               src={thumb}
               loading="lazy"
-              className="w-full h-64 md:h-72 lg:h-80 object-cover rounded-lg cursor-pointer"
+              // Escala optimzada para telas maiores, mantendo a qualidade
+              className="w-full h-64 md:h-72 lg:h-80 2xl:h-96 object-cover rounded-lg cursor-pointer transition-transform hover:scale-[1.02]"
               onClick={() => {
                 setIndex(i);
                 setOpen(true);
