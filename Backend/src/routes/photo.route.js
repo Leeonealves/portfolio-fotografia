@@ -10,6 +10,11 @@ const storage = new CloudinaryStorage({
   cloudinary,
   params: {
     folder: "portfolio_fotografia",
+    // Adicione as transformações aqui:
+    transformation: [
+      { fetch_format: "auto", quality: "auto" }, // Converte para WebP/AVIF e otimiza peso
+      { width: 1920, crop: "limit" } // Opcional: Garante que fotos gigantes sejam redimensionadas
+    ],
   },
 });
 
