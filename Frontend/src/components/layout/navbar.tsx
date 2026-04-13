@@ -25,7 +25,7 @@ function Navbar() {
               to={item.href}
               className={({ isActive }) =>
                 `${item.border ?? ""} p-2 rounded transition-all duration-300 hover:bg-white/10
-                ${isActive ? "text-[#8D2B00]" : "text-white"}`
+                ${isActive ? "border-b-2 border-[#8D2B00] text-white font-semibold" : "text-white opacity-80 hover:opacity-100"}`
               }
             >
               {t(item.label)}
