@@ -8,12 +8,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-dotenv.config({
-  path: path.resolve(__dirname, "../../.env"),
-});
-
-console.log("Loaded .env from:", path.resolve(__dirname, "../../.env"));
-console.log("DATABASE_URL_NO_SRV =", process.env.DATABASE_URL_NO_SRV);
+dotenv.config();
 
 // Configurar Cloudinary
 cloudinary.config({

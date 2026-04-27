@@ -28,13 +28,13 @@ function About() {
               <img
                 src={Foto}
                 alt="Camilla Teixeira Santos"
-                className="rounded-lg w-40 sm:w-56 md:w-64 lg:w-80 xl:w-96 h-auto object-cover border-4 border-white shadow-lg"
+                className="rounded-lg w-40 sm:w-56 md:w-44 lg:w-80 xl:w-96 h-auto object-cover border-4 border-white shadow-lg"
               />
             </div>
 
             {/* Texto */}
             <div className="text-center md:text-left space-y-4 max-w-2xl">
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+              <p className="text-base sm:text-lg md:text-lg lg:text-xl leading-relaxed">
                 {t("homepage.about.text1")}
               </p>
 
